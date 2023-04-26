@@ -12,7 +12,7 @@ defmodule BladeFuryV1Test do
 
     result = BladeFury.fight_vs(samurai, shaolin)
 
-    expect result, to: eq({:ok, :warrior_two})
+    expect result, to: eq(:warrior_two)
   end
 
   test "when a shaolin fights vs a samurai, the shaolin wins" do
@@ -21,7 +21,7 @@ defmodule BladeFuryV1Test do
 
     result = BladeFury.fight_vs(shaolin, samurai)
 
-    expect result, to: eq({:ok, :warrior_one})
+    expect result, to: eq(:warrior_one)
   end
 
   test "when a shaolin fights vs a shaolin, it's a draw" do
@@ -30,6 +30,6 @@ defmodule BladeFuryV1Test do
 
     result = BladeFury.fight_vs(shaolin_one, shaolin_two)
 
-    expect result, to: eq({:ok, :draw})
+    expect result, to: eq(:draw)
   end
 end

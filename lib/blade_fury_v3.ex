@@ -8,9 +8,9 @@ defmodule BladeFuryV3 do
     warrior_two_power = calculate_power(warrior_with_weapon_two)
 
     cond do
-      warrior_one_power > warrior_two_power -> {:ok, :warrior_one}
-      warrior_one_power < warrior_two_power -> {:ok, :warrior_two}
-      true -> {:ok, :draw}
+      warrior_one_power > warrior_two_power -> :warrior_one
+      warrior_one_power < warrior_two_power -> :warrior_two
+      true -> :draw
     end
   end
 
