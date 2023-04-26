@@ -12,7 +12,7 @@ defmodule BladeFuryV2 do
   end
 
   def calculate_power([warrior: warrior, weapon: weapon]) do
-    warrior.strength * weapon.strength
+    warrior.strength * weapon.damage
   end
 
   def calculate_power([warrior: warrior]) do

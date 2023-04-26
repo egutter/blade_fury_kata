@@ -1,5 +1,5 @@
 defmodule BladeFury.Weapon.PunchKick do
-  defstruct strength: 0
+  defstruct damage: 0
 
   alias BladeFury.Weapon.PunchKick
 

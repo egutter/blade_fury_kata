@@ -16,20 +16,16 @@ defmodule BladeFuryV3 do
 
   def calculate_power(
         warrior: %Samurai{strength: warrior_strength},
-        weapon: %Katana{strength: weapon_strenth}
+        weapon: %Katana{damage: weapon_damage}
       ) do
-    warrior_strength * weapon_strenth
+    warrior_strength * weapon_damage
   end
 
   def calculate_power(
         warrior: %Shaolin{strength: warrior_strength},
-        weapon: %Katana{strength: weapon_strenth}
+        weapon: %Katana{damage: weapon_damage}
       ) do
-    warrior_strength + weapon_strenth
-  end
-
-  def calculate_power(warrior: warrior, weapon: weapon) do
-    raise "This game doesn't support a #{warrior.__struct__} armed with a #{weapon.__struct__}"
+    warrior_strength + weapon_damage
   end
 
   def calculate_power(warrior: warrior) do
