@@ -6,4 +6,8 @@ defmodule BladeFury.Weapon.Armory do
   def punch_kick do
     %BladeFury.Weapon.PunchKick{}
   end
+
+  def a_shield do
+    %BladeFury.Armor.Shield{}
+  end
 end

@@ -9,4 +9,8 @@ defmodule BladeFury.Warrior do
   def armed_with(warrior, weapon) do
     warrior |> put(:weapon, weapon)
   end
+
+  def armored_with(warrior, armor) do
+    warrior |> put(:armor, armor)
+  end
 end
